@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style type="text/css">
+    {
+        margin: 0;
+        padding: 0;
+        background-color: #6abadeba;
+        font-family: 'Arial';
+    }
+    
+    body {
+        background: #3c18dfa4;
+    }
+    
+    .login {
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #23463f;
+        border-radius: 15px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 4rem;
+        padding-bottom: 3rem;
+    }
+    
+    label {
+        color: #08ffd1;
+        font-size: 17px;
+    }
+    
+    #Uname {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        padding-left: 8px;
+    }
+    
+    #Pass {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 3px;
+        padding-left: 8px;
+    }
+    
+    #log {
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 17px;
+        padding-left: 7px;
+        color: blue;
+    }
+    
+    span {
+        color: white;
+        font-size: 17px;
+    }
+    
+    a {
+        float: right;
+        background-color: grey;
+    }
+</style>
+
+<body>
+    <h1>Password Change</h1><br>
+    <div class="login">
+        <form id="login" method="get" action="login.php">
+            <label><b>New password    
+        </b>    
+        </label>
+            <input type="text" name="Uname" id="Uname" placeholder="New Password">
+            <br><br>
+            <label><b>Confirm Password     
+        </b>    
+        </label>
+            <input type="Password" name="Pass" id="Pass" placeholder="Confirm Password">
+            <br><br>
+            <input type="submit" name="log" id="log" value="Update">
+            <br><br>
+
+        </form>
+    </div>
+</body>
+
+</html>
