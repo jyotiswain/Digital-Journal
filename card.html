@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="cardcssfile.css" />
+
+
+</head>
+
+<script>
+    let a;
+    let date;
+    let time;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    setInterval(() => {
+        a = new Date(); 
+        date = a.toLocaleDateString(undefined, options);
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time + " <br> on " + date;
+    }, 1000);
+</script>
+
+
+
+<body>
+        <div class="breadcrumb">
+            <h1 style="color: #3c18dfa4;"> Current time is: <span id="time"></span></h1>
+        </div>
+    
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured</span> Services </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image-container">
+                    <img src="images/1245.jpg" alt="">
+                    <div class="info">
+                        <h3>Diary</h3>
+
+                    </div>
+
+                </div>
+                <div class="Deatils">
+                    <h2><p>Write your thoughts & ideas in Diary</p></h2>
+                </div>
+                <div class="buttons">
+                    <a href="Diary.html" class="btn">Open</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <img src="images/121.jpg" alt="">
+                    <div class="info">
+                        <h3>Todo-List</h3>
+
+                    </div>
+
+                </div>
+                <div class="Deatils">
+                    <h2><p>Save your daily tasks.</p></h2>
+                </div>
+                <div class="buttons">
+                    <a href="index.html" class="btn">Open</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <img src="images/124.jpg" alt="">
+                    <div class="info">
+                        <h3>Mood Slider</h3>
+
+                    </div>
+
+                </div>
+                <div class="Deatils">
+                    <h2><p>Whats your mood!</p></h2>
+                </div>
+                <div class="buttons">
+                    <a href="mood.html" class="btn">Open</a>
+                </div>
+            </div>
+        </div>
+</html>
